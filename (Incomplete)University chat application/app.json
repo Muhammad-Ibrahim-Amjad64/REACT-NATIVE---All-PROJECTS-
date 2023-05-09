@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Lucrative-Plus",
+    "slug": "Lucrative-Plus",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.muhammadibrahimkhan.LucrativePlus"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "02d85f2c-9d57-4a0c-bfbf-c95b0f85d7f4"
+      }
+    }
+  },
+  "plugins": [
+    [
+      "expo-notifications",
+      {
+        "icon": "./assets/logoo.png",
+        "color": "#ffffff",
+        "sounds": [
+          "./assets/notifiSound.wav"
+        ]
+      }
+    ]
+  ]
+}

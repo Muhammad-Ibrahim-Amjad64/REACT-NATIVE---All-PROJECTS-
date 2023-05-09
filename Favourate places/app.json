@@ -1,7 +1,6 @@
 {
   "expo": {
-
-    "name": "RNCourse",
+    "name": "favourateplaces",
     "slug": "RNCourse",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,13 +17,25 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow $(PRODUCT_NAME) to access your photos",
+        "NSCameraUsageDescription": "The app need access to your camera in order to take photos of your favourate places",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.muhammadibrahimkhan.RNCourse"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -36,6 +47,11 @@
           "cameraPermission": "The app need access to your camera in order to take photos of your favourate places"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "30f4c2ea-cc54-4678-af69-a43fbf26af21"
+      }
+    }
   }
 }
